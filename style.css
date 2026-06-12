@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&display=swap');
+
+* {
+  font-family: "Alien Block", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.imgPequena {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  min-height: 70vh;
+
+  margin: 25vh auto;
+  text-align: center;
+}
+
+.caixa{
+  width: 31.3%;
+  height: 120px;
+  margin: 1%;
+
+  border: dotted 1px black;
+  float: left;
+}
+
+.caixa1{
+  background-color: cyan;
+}
+.caixa2{
+  background-color: orange;
+}
+.caixa3{
+  background-color: pink;
+}
+.caixa4{
+  background-color: cyan;
+}
+.caixa5{
+  background-color: pink;
+}
+.caixa6{
+  background-color: ghostwhite;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px){
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .caixa {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  body {
+    background-color: burlywood;
+    color: black;
+  }
+
+  .caixa {
+    width: 48%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+  body {
+    background-color: goldenrod;
+    color: black;
+  }
+
+  .caixa {
+    width: 48%;
+  }
+}
+
+@media (orientation: landscape){
+  body {
+    background-color: blanchedalmond;
+  }
+}
+
+@media print {
+  .container-caixas {
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .imgPequena {
+    display: block;
+  }
+  .imgGrande {
+    display: none;
+  }
+}
